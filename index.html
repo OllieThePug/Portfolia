@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah Findley - Professional Portfolio</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,8 +19,36 @@
         header {
             background: #0d6efd;
             color: #fff;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             text-align: center;
+        }
+        .uvp {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .linkedin-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            background-color: #0077b5;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .linkedin-btn:hover {
+            background-color: #005582;
+        }
+        .linkedin-icon {
+            width: 18px;
+            height: 18px;
+            fill: white;
         }
         nav {
             display: flex;
@@ -30,8 +61,10 @@
             margin: 0 1rem;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
         nav a:hover {
+            color: #084298;
             text-decoration: underline;
         }
         section {
@@ -60,6 +93,13 @@
     <header>
         <h1>Sarah Findley</h1>
         <p>Project Coordinator | Austin, TX | sgfindley99@gmail.com | 903-702-8745</p>
+        <p class="uvp">Passionate about protecting Texas public water health and advocating for equitable water rights through policy, project coordination, and community engagement.</p>
+        <a class="linkedin-btn" href="https://www.linkedin.com/in/findleysarah/" target="_blank">
+            <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 01107.6 0c0 29.7-24.1 54.3-53.81 54.3zM447.9 448h-92.4V306.4c0-33.7-12.1-56.7-42.4-56.7-23.1 0-36.8 15.5-42.8 30.5-2.2 5.4-2.8 12.9-2.8 20.5V448h-92.4s1.2-270.3 0-297.1h92.4v42.1c12.3-19 34.3-46.1 83.6-46.1 61 0 106.8 39.8 106.8 125.2V448z"/>
+            </svg>
+            Connect on LinkedIn
+        </a>
     </header>
 
     <nav>
@@ -100,22 +140,11 @@
             <li>Managed client scheduling and vendor relations.</li>
             <li>Oversaw inventory control of $150,000.</li>
         </ul>
-
-        <h3>Gap Factory, San Marcos, TX — Cashier/Sales Floor</h3>
-        <p><em>March 2019 to December 2019</em></p>
-        <ul>
-            <li>Processed online orders and opened store credit accounts.</li>
-        </ul>
-
-        <h3>Crooked Hollow Golf Club, Greenwood, LA — Front Office Associate / Pro Shop Sales</h3>
-        <p><em>May 2017 to March 2018</em></p>
-        <ul>
-            <li>Handled POS sales, restaurant service, and event planning.</li>
-        </ul>
     </section>
 
     <section id="education">
         <h2>Education</h2>
+        <p><strong>University of Texas at Arlington</strong> — Currently pursuing Master of Business Administration (MBA)</p>
         <p><strong>Texas State University</strong> — Bachelor of Business Administration in Economics (2018-2022)</p>
     </section>
 
